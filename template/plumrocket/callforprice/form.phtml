@@ -1,0 +1,76 @@
+<div class="page-title">
+    <h1>Call For Price</h1>
+    <p>Зателефонуйте нам за номером +1 ххххх або зробіть запит і ми самі з вами зв'яжимось</p><br>
+</div>
+<form action="<?= Mage::getUrl('*/*/save')?>" id="requestForm" method="post">
+    <div class="fieldset">
+        <ul class="form-list">
+            <li class="fields">
+                <div class="field">
+                    <label for="name" class="required"><em>*</em>Name</label>
+                    <div class="input-box">
+                        <input name="name" id="name" title="Name" class="input-text required-entry" type="text" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email" class="required"><em>*</em>Email</label>
+                    <div class="input-box">
+                        <input name="email" id="email" title="Email" class="input-text required-entry validate-email" type="text" />
+                    </div>
+                </div>
+            	<div class="field">
+            		<label for="phone" class="required"><em>*</em>Phone</label>
+                	<div class="input-box">
+                    	<input name="phone" id="phone" title="Phone" class="input-text required-entry validate-phoneStrict" type="text" />
+                	</div>	
+            	</div>
+            	<div class="field">
+            		<label for="address">Address</label>
+                	<div class="input-box">
+                    	<input name="address" id="address" title="Address" class="input-text" type="text" />
+                	</div>	
+            	</div>
+            	<div class="field">
+            		<label for="company">Company</label>
+                	<div class="input-box">
+                    	<input name="company" id="company" title="Company" class="input-text" type="text" />
+                	</div>	
+            	</div>
+            	<div class="field">
+            		<label for="state">State</label>
+                	<div class="input-box">
+                    	<input name="state" id="state" title="State" class="input-text" type="text" />
+                	</div>	
+            	</div>
+            	<div class="field">
+            		<label for="country">Country</label>
+                	<div class="input-box">
+                    	<input name="country" id="country" title="Country" class="input-text" type="text" />
+                	</div>	
+            	</div>
+            <li class="wide">
+                <label for="message" class="required"><em>*</em>Message</label>
+                <div class="input-box">
+                    <textarea name="message" id="message" title="Message" class="required-entry input-text" cols="5" rows="3"></textarea>
+                </div>
+            </li>
+            <li class="fields">
+            	<div class="field">
+                    <label for="recall" class="required"><em>*</em>What time is best for to call you?</label>
+                    <div class="input-box">
+                        <input name="recall" id="recall" class="input-datetime required-entry" type="datetime-local" />
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buttons-set">
+        
+        <button type="submit" title="Send Form" class="button">Request A Call</button>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var requestForm = new VarienForm('requestForm', true);
+//]]>
+</script>

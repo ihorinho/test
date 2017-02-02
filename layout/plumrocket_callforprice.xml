@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<layout>
+	<plumrocket_callforprice_index_index>
+		<reference name="content">
+			<block type="plumrocket_callforprice/form" template="plumrocket/callforprice/form.phtml" />
+		</reference>
+	</plumrocket_callforprice_index_index>
+</layout>
